@@ -9,18 +9,31 @@
 
 		private void MainForm_Load(object sender, System.EventArgs e)
 		{
-			MakeCenter();
+			//titleLabel.Left = (Width - titleLabel.Width) / 2;
+			//titleLabel.Top = (Height - titleLabel.Height) / 2;
+
+			MoveLabelCenter();
 		}
 
 		private void MainForm_Resize(object sender, System.EventArgs e)
 		{
-			MakeCenter();
+			//titleLabel.Left = (Width - titleLabel.Width) / 2;
+			//titleLabel.Top = (Height - titleLabel.Height) / 2;
+
+			MoveLabelCenter();
 		}
 
-		private void MakeCenter()
+		private void MoveLabelCenter()
 		{
+			//titleLabel.Left = (Width - titleLabel.Width) / 2;
+			//titleLabel.Top = (Height - titleLabel.Height) / 2;
+
+			System.Drawing.Rectangle screenRectangle = RectangleToScreen(this.ClientRectangle);
+
+			int titleHeight = screenRectangle.Top - Top;
+
 			titleLabel.Left = (Width - titleLabel.Width) / 2;
-			titleLabel.Top = (Height - titleLabel.Height) / 2;
+			titleLabel.Top = (Height - titleHeight - titleLabel.Height) / 2;
 		}
 	}
 }
