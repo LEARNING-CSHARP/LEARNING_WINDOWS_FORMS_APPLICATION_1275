@@ -23,6 +23,14 @@
 			MoveLabelCenter();
 		}
 
+		/// <summary>
+		/// دقت کنید که اگر ویژگی
+		/// Anchor
+		/// کتنرلی را
+		/// none
+		/// قرار دهیم، به طور اتوماتیک در اثر تغییر اندازه فرم، کنترل به نسبتی که از لبه‌ها فاصله دارد
+		/// جابجا می‌شود
+		/// </summary>
 		private void MoveLabelCenter()
 		{
 			//titleLabel.Left = (Width - titleLabel.Width) / 2;

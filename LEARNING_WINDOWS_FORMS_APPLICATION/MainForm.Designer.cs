@@ -27,7 +27,6 @@
 			// 
 			// titleLabel
 			// 
-			this.titleLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
 			this.titleLabel.BackColor = System.Drawing.Color.Khaki;
 			this.titleLabel.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.titleLabel.ForeColor = System.Drawing.Color.Black;
