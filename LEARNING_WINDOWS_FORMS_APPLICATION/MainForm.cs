@@ -36,7 +36,7 @@
 			//titleLabel.Left = (Width - titleLabel.Width) / 2;
 			//titleLabel.Top = (Height - titleLabel.Height) / 2;
 
-			System.Drawing.Rectangle screenRectangle = RectangleToScreen(this.ClientRectangle);
+			System.Drawing.Rectangle screenRectangle = RectangleToScreen(ClientRectangle);
 
 			int titleHeight = screenRectangle.Top - Top;
 
